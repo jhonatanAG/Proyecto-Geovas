@@ -1,0 +1,23 @@
+.navbar {
+    background-color: #1946c4;
+    list-style-type: none;
+    padding: 20px 10px;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+  }
+  
+  .navbar-item {
+    margin-right: 5%;
+  }
+  
+  .navbar-item a {
+    text-decoration: none;
+    color: #e8e4e4;
+    font-weight: bold;
+  }
+  
+  .navbar-item a:hover {
+    color: #b4b4ca;
+  }
+  

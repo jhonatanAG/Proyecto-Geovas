@@ -1,0 +1,34 @@
+
+
+
+CREATE TABLE tasks (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(200) NOT NULL,
+    description VARCHAR(300),
+    done BOOLEAN NOT NULL DEFAULT 0,
+    createAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+   
+);
+
+CREATE TABLE stock (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    pieza VARCHAR(200) NOT NULL,
+    cliente VARCHAR(300),
+    fecha_ingreso DATE NOT NULL,
+    numero_Serie VARCHAR(200),
+    modelo VARCHAR(100),
+    status_pieza VARCHAR(50),
+    localizacion VARCHAR(50),
+    createAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+   
+);
+
+CREATE TABLE empleados (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(200) NOT NULL,
+    tipo VARCHAR(300),
+    createAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+   
+);
+
+ALTER TABLE stock MODIFY fecha_ingreso VARCHAR(10);
